@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.App_Technical" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    </style>
+
+    <style name="Theme.App_Technical" parent="Base.Theme.App_Technical" />
+    <style name="neumorphimrcard">
+        <item name="neumorph_cornerFamily">rounded</item>
+        <item name="neumorph_cornerSize">12dp</item>
+
+        <!-- Or if wants different radii depending on the corner. -->
+
+    </style>
+    <style name="Theme.Neumorph" parent="Base.Theme.Neumorph" />
+
+    <style name="Theme.Neumorph.Light" parent="Base.Theme.Neumorph.Light" />
+
+    <style name="Theme.Neumorph.Light.DarkActionBar" parent="Base.Theme.Neumorph.Light.DarkActionBar" />
+
+    <style name="Theme.Neumorph.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Neumorph.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Neumorph.DialogWhenLarge" parent="Base.Theme.Neumorph.DialogWhenLarge" />
+
+    <style name="Theme.Neumorph.Light.DialogWhenLarge" parent="Base.Theme.Neumorph.Light.DialogWhenLarge" />
+
+    <style name="Theme.Neumorph.CompactMenu" parent="Base.Theme.Neumorph.CompactMenu" />
+
+</resources>

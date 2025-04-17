@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+        maven {url= uri("https://maven.aliyun.com/repository/jcenter")}
+
+         // ✅ Đảm bảo có dòng này nếu sử dụng thư viện từ JitPack
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // ✅ Đảm bảo có dòng này
+    }
+}
+
+
+
+
+
+rootProject.name = "App_Technical"
+include ':app'

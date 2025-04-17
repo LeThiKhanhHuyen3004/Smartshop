@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Tin nhắn gửi -->
+    <TextView
+        android:id="@+id/txtMessageSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/back_send_message"
+        android:elevation="2dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:padding="12dp"
+        android:text="Chat content"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <!-- Thời gian gửi -->
+    <TextView
+        android:id="@+id/txtTimeSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Time"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/txtMessageSend"
+        app:layout_constraintTop_toBottomOf="@id/txtMessageSend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Select shipping address"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Spinner chọn tỉnh/thành phố -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Province/City"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerProvince"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_background" />
+
+    <!-- Spinner chọn quận/huyện -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="District"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_background" />
+
+    <!-- Spinner chọn xã/phường -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Commune/Ward"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spinnerWard"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/border_background" />
+
+    <!-- EditText nhập tên đường -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Street name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtStreetName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Nhập tên đường (ví dụ: Đường Láng)"
+        android:background="@drawable/border_background"
+        android:padding="8dp" />
+
+    <!-- EditText nhập số nhà -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="House number"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtHouseNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Nhập số nhà (ví dụ: 123)"
+        android:background="@drawable/border_background"
+        android:padding="8dp" />
+
+    <!-- Nút xác nhận -->
+    <Button
+        android:id="@+id/btnConfirmAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_button"
+        android:text="CONFIRM"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

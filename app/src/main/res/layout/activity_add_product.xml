@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.AddProductActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/material_dynamic_neutral_variant99"
+      app:layout_constraintTop_toTopOf="parent"
+      app:title="Add Product" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/line1"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      android:padding="5dp"
+      app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius"
+        android:hint="Product Name"
+        android:inputType="text" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/line2"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      android:padding="5dp"
+      app:layout_constraintTop_toBottomOf="@id/line1">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius"
+        android:hint="Product Price"
+        android:inputType="number" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/layoutCount"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      android:padding="5dp"
+      app:layout_constraintTop_toBottomOf="@id/line2">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/countProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius"
+        android:hint="Count Product"
+        android:inputType="number" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/line3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      app:layout_constraintTop_toBottomOf="@id/layoutCount">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imageRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toStartOf="@id/imgCamera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.75"
+        tools:listitem="@layout/item_image_url" />
+
+    <ImageView
+        android:id="@+id/imgCamera"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/cardview_light_background"
+        android:src="@drawable/ic_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.2" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/line4"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      android:padding="5dp"
+      app:layout_constraintTop_toBottomOf="@id/line3">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius"
+        android:hint="Product Description"
+        android:inputType="text" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <Spinner
+      android:id="@+id/spinner_category"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      app:layout_constraintTop_toBottomOf="@id/line4" />
+
+  <!-- Thêm TextInputLayout cho linkVideo -->
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/line5"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="10dp"
+      android:padding="5dp"
+      app:layout_constraintTop_toBottomOf="@id/spinner_category">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/linkVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_radius"
+        android:hint="Video Link (Optional)"
+        android:inputType="textUri" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnAdd"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="20dp"
+      android:background="@drawable/bg_button_continue"
+      android:text="Add this product"
+      android:textAllCaps="false"
+      android:textColor="@color/background"
+      android:textSize="18sp"
+      app:layout_constraintTop_toBottomOf="@id/line5"
+      tools:layout_editor_absoluteX="10dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

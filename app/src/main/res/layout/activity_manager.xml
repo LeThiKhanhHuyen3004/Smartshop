@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/common_google_signin_btn_tint"
+    tools:context=".activity.ManagerActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_white"
+        app:title="Product Manager"
+        app:titleTextColor="@color/background"
+        tools:layout_editor_absoluteX="193dp">
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="20dp"
+            android:src="@drawable/ic_add_white"
+            tools:layout_editor_absoluteX="378dp"
+            tools:layout_editor_absoluteY="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_margin="5dp"
+    android:id="@+id/recycleview_manager"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"/>
+    <!-- Menu Buttons -->
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/toolbar"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp">-->
+
+<!--        &lt;!&ndash; Add Button &ndash;&gt;-->
+<!--        <soup.neumorphism.NeumorphCardView-->
+<!--            style="@style/neumorphimrcard"-->
+<!--            android:layout_width="105dp"-->
+<!--            android:id="@+id/neu_addProduct"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:neumorph_backgroundColor="@color/background"-->
+<!--            app:neumorph_shadowColorLight="@color/highlight"-->
+<!--            app:neumorph_shadowColorDark="@color/shadow_color"-->
+<!--            app:neumorph_shapeType="flat">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="5dp">-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/baseline_add_circle_outline_24"-->
+<!--                    android:tint="@android:color/holo_red_light"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add"-->
+<!--                    android:textColor="@android:color/holo_red_light"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"/>-->
+<!--            </LinearLayout>-->
+<!--        </soup.neumorphism.NeumorphCardView>-->
+
+<!--        &lt;!&ndash; Edit Button &ndash;&gt;-->
+<!--        <soup.neumorphism.NeumorphCardView-->
+<!--            style="@style/neumorphimrcard"-->
+<!--            android:layout_width="121dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:neumorph_backgroundColor="@color/background"-->
+<!--            app:neumorph_shadowColorLight="@color/highlight"-->
+<!--            app:neumorph_shadowColorDark="@color/shadow_color"-->
+<!--            app:neumorph_shapeType="flat"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="5dp">-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/pass_icon"-->
+<!--                    android:tint="@android:color/holo_red_light"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Edit"-->
+<!--                    android:textColor="@android:color/holo_red_light"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"/>-->
+<!--            </LinearLayout>-->
+<!--        </soup.neumorphism.NeumorphCardView>-->
+
+<!--        &lt;!&ndash; Delete Button &ndash;&gt;-->
+<!--        <soup.neumorphism.NeumorphCardView-->
+<!--            style="@style/neumorphimrcard"-->
+<!--            android:layout_width="127dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:neumorph_backgroundColor="@color/background"-->
+<!--            app:neumorph_shadowColorLight="@color/highlight"-->
+<!--            app:neumorph_shadowColorDark="@color/shadow_color"-->
+<!--            app:neumorph_shapeType="flat"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="5dp">-->
+
+<!--                <androidx.appcompat.widget.AppCompatImageView-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/baseline_delete_24"-->
+<!--                    android:tint="@android:color/holo_red_light"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Delete"-->
+<!--                    android:textColor="@android:color/holo_red_light"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold"/>-->
+<!--            </LinearLayout>-->
+<!--        </soup.neumorphism.NeumorphCardView>-->
+
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

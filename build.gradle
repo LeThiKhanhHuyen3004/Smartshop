@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.4' // Kiểm tra đúng phiên bản
+        classpath 'com.google.gms:google-services:4.4.2'
+
+    }
+}
+plugins {
+    alias(libs.plugins.google.gms.google.services) apply false
+    // ...
+
+    // Add the dependency for the Google services Gradle plugin
+//    id 'com.google.gms.google-services' version '4.4.2' apply false
+
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {url= uri("https://maven.aliyun.com/repository/jcenter")}
+
+        // Nếu cần
+    }
+}

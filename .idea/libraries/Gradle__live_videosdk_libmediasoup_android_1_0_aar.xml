@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: live.videosdk:libmediasoup-android:1.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2ce4ed8a019965b5c1cec136c1f12307/transformed/jetified-libmediasoup-android-1.0/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2ce4ed8a019965b5c1cec136c1f12307/transformed/jetified-libmediasoup-android-1.0/jars/libs/libwebrtc.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2ce4ed8a019965b5c1cec136c1f12307/transformed/jetified-libmediasoup-android-1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Checkbox -->
+
+        <!-- Hình ảnh sản phẩm -->
+
+        <CheckBox
+            android:id="@+id/item_cart_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/item_cart_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iconnew"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_cart_check"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Thông tin sản phẩm -->
+        <TextView
+            android:id="@+id/item_cart_productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Samsung Galaxy A16 LTE"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_cart_image"
+            app:layout_constraintTop_toTopOf="@id/item_cart_image" />
+
+        <TextView
+            android:id="@+id/item_cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="4.219.000đ"
+            android:textColor="@color/background_button"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@id/item_cart_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_cart_productName" />
+
+        <!-- Điều chỉnh số lượng -->
+        <ImageView
+            android:id="@+id/item_cart_remove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/background"
+            android:padding="4dp"
+            android:src="@drawable/ic_remove"
+            android:tint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/item_cart_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_cart_price" />
+
+        <TextView
+            android:id="@+id/item_cart_count"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="3dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/item_cart_remove"
+            app:layout_constraintStart_toEndOf="@id/item_cart_remove"
+            app:layout_constraintTop_toTopOf="@id/item_cart_remove" />
+
+        <ImageView
+            android:id="@+id/item_cart_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/background"
+            android:padding="4dp"
+            android:src="@drawable/ic_addcart"
+            android:tint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@id/item_cart_remove"
+            app:layout_constraintStart_toEndOf="@id/item_cart_count"
+            app:layout_constraintTop_toTopOf="@id/item_cart_remove" />
+
+        <!-- Tổng tiền -->
+        <TextView
+            android:id="@+id/item_cart_ProductPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.219.000đ"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

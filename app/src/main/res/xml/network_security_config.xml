@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">mauweb.monamedia.net</domain>
+        <domain includeSubdomains="true">192.168.1.7</domain>
+        <domain includeSubdomains="true">172.20.10.11</domain>
+        <domain includeSubdomains="true">172.16.76.148</domain>
+        <domain includeSubdomains="true">192.168.1.4</domain>
+        <domain includeSubdomains="true">172.16.76.225</domain>
+        <domain includeSubdomains="true">172.16.67.157</domain>
+        <domain includeSubdomains="true">example.info.vn</domain>
+        <domain includeSubdomains="true">172.16.70.251</domain>
+        <domain includeSubdomains="true">172.16.67.106</domain>
+        <domain includeSubdomains="true">sandbox.vnpayment.vn</domain>
+        <domain includeSubdomains="true">172.16.75.136</domain>
+        <domain includeSubdomains="true">https://dev-api.videosdk.live/v2/rooms</domain>
+
+    </domain-config>
+</network-security-config>

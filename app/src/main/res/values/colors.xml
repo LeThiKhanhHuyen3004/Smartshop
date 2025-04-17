@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="shadow_color">#757575</color>
+    <color name="highlight">#FFFFFF</color> <!-- Màu trắng sáng -->
+    <color name="background_button">#eb1c2e</color>
+    <color name="background_main">#0066FF</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="nav_icon_color">#FFFFFF</color> <!-- Icon trắng khi ở Dark Mode -->
+    <color name="nav_text_color">#FFFFFF</color>
+
+
+    <!-- Màu chữ -->
+
+
+
+</resources>
